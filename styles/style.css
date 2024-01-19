@@ -169,9 +169,11 @@ header nav .menu a li:hover {
 
 /* Product Section */
 .product {
+  /* Important! */
   padding: 0 20rem;
   width: 100%;
   height: 100%;
+
   margin-bottom: 20rem;
 }
 
@@ -184,6 +186,7 @@ header nav .menu a li:hover {
 }
 
 .product .product-container {
+  /* Important! */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -191,8 +194,10 @@ header nav .menu a li:hover {
 }
 
 .product .product-container .product-card {
+  /* Important! */
   width: 25rem;
   height: 25rem;
+
   background-color: #efefefef;
   border-radius: 2rem;
 
@@ -205,6 +210,7 @@ header nav .menu a li:hover {
 }
 
 .product .product-container .product-card img {
+  /* Important! */
   width: 80%;
   border-radius: 50%;
 }
@@ -231,4 +237,190 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #efefefef;
+}
+
+
+
+/* ----------------------------------Media Query---------------------- */
+/* ## Not fully ok ## */
+@media screen and (max-width: 1200px) {
+
+  header,
+  .hero,
+  .product {
+    /* Important! */
+    padding: 0 10rem;
+  }
+
+  header nav .logo h1 {
+    font-size: 3rem;
+  }
+
+  .hero .hero-contant h1 {
+    width: 20rem;
+    font-size: 3rem;
+
+  }
+
+  /* header nav .logo h1 {
+    font-size: 4rem;
+    width: 35rem;
+  } */
+
+  .hero .hero-contant p {
+    width: 20rem;
+  }
+
+  .hero .hero-img img {
+    /* Important! */
+    width: 80%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+  header,
+  .hero,
+  .product {
+    /* Important! */
+    padding: 0 9rem;
+  }
+
+  .hero,
+  .product {
+    margin-bottom: 10rem;
+  }
+
+  header nav .logo h1 {
+    font-size: 3rem;
+  }
+
+  header nav .menu a {
+    margin-left: 2rem;
+  }
+
+  header nav .menu a li {
+    font-size: 2rem;
+  }
+
+  .hero {
+    /* Important! */
+    flex-direction: column;
+  }
+
+  .hero .hero-content {
+    /* Important! */
+    order: 2;
+    width: 100%;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 4rem;
+    width: 100%;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .hero .hero-img {
+    /* Important! */
+    order: 1;
+    width: 100%;
+  }
+
+
+  .product h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .product .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+
+  header,
+  .hero,
+  .product {
+    /* Important! */
+    padding: 0 5rem;
+  }
+
+  .hero,
+  .product {
+    margin-bottom: 12rem;
+  }
+
+  header nav .logo h1 {
+    font-size: 2rem;
+  }
+
+  header nav .menu a {
+    margin-left: 1rem;
+  }
+
+  header nav .menu a li {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    /* Important! */
+    flex-direction: column;
+  }
+
+  .hero .hero-content {
+    /* Important! */
+    order: 2;
+    width: 100%;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .hero .hero-img {
+    /* Important! */
+    order: 1;
+    width: 100%;
+  }
+
+
+  .product h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .product .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer p {
+    font-size: 1.3rem;
+  }
 }
